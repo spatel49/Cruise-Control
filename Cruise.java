@@ -59,15 +59,18 @@ public class Cruise {
         }
 
         System.out.print("Car speed registered.\n");
-
+        
         while(true){
             turn_on = sc.nextLine();
-            if (turn_on.equals("1")){
+            if (turn_on.equals("on")){
+                System.out.print("\n \n****************************************** \n");
+                System.out.print("*********   CRUISE CONTROL ON   ********** \n");
+                System.out.print("****************************************** \n \n");
                 System.out.print("Cruise Control is running. Enter \n: '+' to increase speed, \n: '-' to decrease speed," +
-                "\n: 'error log' to view Error Log, \n: 'speed log' to view Speed Log, \n: '0' to turn off, \n: 'help' to repeat.\n");
+                "\n: 'error log' to view Error Log, \n: 'speed log' to view Speed Log, \n: 'off' to turn off, \n: 'help' to repeat.\n");
                 break;
             } else {
-                System.out.print("Enter '1' to turn on Cruise Control: ");
+                System.out.print("\nEnter 'on' to turn on Cruise Control: ");
             }
         }
 
@@ -77,7 +80,7 @@ public class Cruise {
         Speed_Log.put(get_time(), "Current speed: " + currentspeed);
         String running_input = sc.nextLine();
 
-        while (turn_on.equals("1")){
+        while (turn_on.equals("on")){
             if (running_input.equals("+")){
                 currentspeed = increment(currentspeed);
                 if (!in_range(currentspeed)){
@@ -98,8 +101,8 @@ public class Cruise {
                 Speed_Log.put(get_time(), "Current speed: " + currentspeed);
             }
 
-            if (running_input.equals("0")){
-                turn_on = "0";
+            if (running_input.equals("off")){
+                turn_on = "off";
                 break;
             }
 
@@ -113,14 +116,16 @@ public class Cruise {
 
             if (running_input.equals("help")){
                 System.out.print("Cruise Control is running. Enter \n: '+' to increase speed, \n: '-' to decrease speed," +
-                "\n: 'error log' to view Error Log, \n: 'speed log' to view Speed Log, \n: '0' to turn off, \n: 'help' to repeat.\n");
+                "\n: 'error log' to view Error Log, \n: 'speed log' to view Speed Log, \n: 'off' to turn off, \n: 'help' to repeat.\n");
             }
 
             System.out.print("Cruise Control is running. Current car speed: " + currentspeed + "\n");
             running_input = sc.nextLine();
         }
 
-        System.out.print("Cruise Control turned off. \n");
+        System.out.print("\n \n****************************************** \n");
+        System.out.print("*********   CRUISE CONTROL OFF   ********* \n");
+        System.out.print("****************************************** \n \n");
 
         sc.close();
         
