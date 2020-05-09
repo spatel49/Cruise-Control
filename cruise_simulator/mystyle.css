@@ -1,0 +1,229 @@
+body {
+margin:0;
+padding:0;
+background-image: url(../s2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+#font{
+padding-top: 100px;
+top: 0px;
+margin-top: -10px;
+font-family: georgia,garamond,serif;
+font-size: 50px;
+font-style: italic;
+text-align: center;
+color: #ffffff;
+margin-left: -160px;
+margin-top: 120px;
+}
+
+#font.open{
+padding-top: 100px;
+top: 0px;
+margin-top: -10px;
+font-family: georgia,garamond,serif;
+font-size: 50px;
+font-style: italic;
+text-align: center;
+color: #ffffff;
+margin-left: -160px;
+margin-top: 180px;
+}
+
+#myHeader{
+	margin-left: 10px;
+	color: white;
+}
+
+#enterspeed{ 
+	margin-left: 20px;
+	display: inline-block;
+}
+
+#font2{
+	top: 0px;
+	margin-top: 0px;
+	background: none;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	color: #ffffff;
+	margin-left: 30px;
+}
+
+#btl{
+	color: white;
+	font-size: 15px;
+	background-color: transparent;
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 25px 25px 25px 0px;
+	height: 0px;
+	width: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+
+#btr{
+	color: white;
+	font-size: 15px;
+	background-color: transparent;
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 25px 0px 25px 25px;
+	height: 0px;
+	width: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+#brakes{
+	border: 0px;
+	background-color: black;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "montserrat";
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	width: 150px;
+	height: 100px;
+	color: #db2626;
+	float: right;
+	margin-right: 400px;
+	margin-top: 150px;
+	margin-right: 410px;
+	margin-bottom: 50px;
+}
+
+
+#accelerate{
+	border: 0px;
+	background-color: black;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "montserrat";
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	width: 150px;
+	height: 100px;
+	color: #db2626;
+	float: right;
+	margin-right: 400px;
+	margin-top: 150px;
+	margin-right: 350px;
+	margin-bottom: 50px;
+}
+
+#btn {
+border: 1px solid #db2626;
+background: none;
+padding: 10px 20px;
+font-size: 20px;
+font-family: "montserrat";
+cursor: pointer;
+margin: 5px;
+transition: 0.8s;
+position: relative;
+overflow: hidden;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+color: #db2626;
+}
+
+#btn:hover{
+color: white;
+}
+
+#btn::before{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 0%;
+background: #db2626;
+z-index: -1;
+transition: 0.8s;
+top: 0;
+border-radius: 0 0 50% 50%;
+}
+#btn:hover::before{
+height: 180%;
+}
+
+#btn.open{
+border: 1px solid #26db3e;
+background: none;
+padding: 10px 20px;
+font-size: 20px;
+font-family: "montserrat";
+cursor: pointer;
+margin: 5px;
+transition: 0.8s;
+position: relative;
+overflow: hidden;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+color: #26db3e;;
+}
+#btn.open:hover{
+color: white;
+}
+
+#btn.open::before{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 0%;
+background: #26db3e;
+z-index: -1;
+transition: 0.8s;
+top: 0;
+border-radius: 0 0 50% 50%;
+}
+#btn.open:hover::before{
+height: 180%;
+}
+
+#carspeed{
+	border: 1px solid black;
+	background: black;
+	margin-left: 10px;
+	width: 70px;
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+}
+
+#submit{
+	background: black;
+	color: white;
+	border: 0px;
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-left: 80px;
+	cursor: pointer;
+}
+
+
+#output{
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	color: #db2626;
+	font-size: 20px;
+	margin-left: 10px;
+}
