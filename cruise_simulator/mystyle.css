@@ -162,20 +162,18 @@ height: 180%;
 }
 
 #btn.open{
-border: 1px solid #26db3e;
-background: none;
+border: 1px solid #db2626;
+background: #db2626;
 padding: 10px 20px;
 font-size: 20px;
 font-family: "montserrat";
 cursor: pointer;
 margin: 5px;
-transition: 0.8s;
 position: relative;
-overflow: hidden;
 border-radius: 50%;
 width: 100px;
 height: 100px;
-color: #26db3e;;
+color: white;;
 }
 #btn.open:hover{
 color: white;
@@ -187,7 +185,7 @@ position: absolute;
 left: 0;
 width: 100%;
 height: 0%;
-background: #26db3e;
+background: #db2626;
 z-index: -1;
 transition: 0.8s;
 top: 0;
@@ -227,3 +225,57 @@ height: 180%;
 	font-size: 20px;
 	margin-left: 10px;
 }
+
+#logs1{
+	bottom: 0;
+	background-color: black;
+	color: #db2626;
+	font-size: 10px;
+	overflow: scroll;
+	width: 350px;
+	height: 110px;
+	float: right;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#logs2{
+	bottom: 0;
+	background-color: black;
+	color: #db2626;
+	font-size: 10px;
+	overflow: scroll;
+	width: 350px;
+	height: 110px;
+	float: right;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#logs2::-webkit-scrollbar {
+	width: 1em;
+  }
+   
+#logs2::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+#logs2::-webkit-scrollbar-thumb {
+	background-color: #db2626;
+	outline: 1px solid slategrey;
+  }
+
+#logs1::-webkit-scrollbar {
+width: 1em;
+}
+   
+#logs1::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+#logs1::-webkit-scrollbar-thumb {
+	background-color: #db2626;
+	outline: 1px solid slategrey;
+  }
