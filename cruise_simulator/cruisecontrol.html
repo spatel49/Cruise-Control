@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-	<meta charset="utf-8">
-	<meta name=viewport conten="width=device-width, initial-scale=1">
-	<title>Cruise Control</title>
-	<link rel="stylesheet" href="mystyle.css">
-</head>
-<h1 id="myHeader"><span style="background-color: black">Cruise Control Simulation</span></h1>
-<body>
-	<div>
-		<form id="enterspeed">
-			<label id="font2">Starting Speed:</label>
-			<input type="text" id="carspeed"><br><br>
-			<button id="submit">Submit</button>
-		</form>
-		<p id="logs1"><span style="color:white;font-weight: bold;background-color: #db2626;font-size: 20px;">Speed Log</span><br/></p>
-		<p id="logs2"><span style="color:white;font-weight: bold;background-color: #db2626;font-size: 20px;">Error Log</span><br/></p>
-	</div>
-	<div id="font">
-		<button id="btl">-</button>
-		<button id="btn">Cruise</button>
-		<button id="btr">+</button>
-	</div> 
-	<div>
-		<button id="accelerate">GAS</button>
-		<button id="brakes">BRAKES</button>
-		<p id="output">Display Output: Cruise Control turned off.</p>
-	</div>
-	<script src="test.js"></script>
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name=viewport conten="width=device-width, initial-scale=1">
+      <title>Cruise Control</title>
+      <link rel="stylesheet" href="mystyle.css">
+   </head>
+   <h1 id="myHeader"><span style="background-color: black">Cruise Control Simulation</span></h1>
+   <body style = "background-image: url(s2.jpg);">
+	   <!-- Enter Initial Car Speed -->
+      <div>
+         <form id="enterspeed">
+            <label id="font2">Starting Speed:</label>
+            <input type="text" id="carspeed"><br><br>
+            <button id="submit">Submit</button>
+		 </form>
+		 <!-- Maintain Error/Speed Logs -->
+         <p id="logs1"><span style="color:white;font-weight: bold;background-color: #db2626;font-size: 20px;">Speed Log</span><br/></p>
+         <p id="logs2"><span style="color:white;font-weight: bold;background-color: #db2626;font-size: 20px;">Error Log</span><br/></p>
+      </div>
+      <div id="font">
+		<!-- Main Buttons: Cruise, +, - -->
+         <button id="btl">-</button>
+         <button id="btn">Cruise</button>
+         <button id="btr">+</button>
+      </div>
+      <div>
+		<!-- Buttons to Accelerate Speed and Press Brakes -->
+         <button id="accelerate">GAS</button>
+		 <button id="brakes">BRAKES</button>
+		 <!-- Displays Output -->
+         <p id="output">Cruise Control turned off.</p>
+      </div>
+      <script src="test.js"></script>
+   </body>
 </html>
